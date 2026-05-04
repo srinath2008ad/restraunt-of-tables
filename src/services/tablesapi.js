@@ -4,7 +4,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 // Define a service using a base URL and expected endpoints
 export const tablesApi = createApi({
   reducerPath: 'tablesApi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:3000/tables' }),
+  baseQuery: fetchBaseQuery({ baseUrl: '\tables' }),
   endpoints: (builder) => ({
     gettables: builder.query({
       query: () => ``,
